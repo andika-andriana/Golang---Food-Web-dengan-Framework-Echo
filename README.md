@@ -16,7 +16,7 @@
 ### Installasi:
 
 - Download atau Clone Repository.
-- Masukan kedalam baru folder bernama 'echo'  →  C:/Go/src/<echo>
+- Extract kedalam folder baru berinama 'echo'  →  C:/Go/src/<echo>
 - Jalankan:
 
         go run main.go
