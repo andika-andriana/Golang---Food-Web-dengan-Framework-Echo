@@ -1,0 +1,78 @@
+{{define "base.html"}}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{template "title" .}}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="static/images/favicon.ico" />
+  <link href="static/fonts/beyond_the_mountains-webfont.css" rel="stylesheet" type="text/css">
+  <link href="static/plugin-frameworks/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="static/plugin-frameworks/swiper.css" rel="stylesheet" type="text/css">
+  <link href="static/fonts/ionicons.css" rel="stylesheet" type="text/css">
+  <link href="static/common/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a class="logo" href="/"><img src="static/images/heading_logo.png" alt="Logo"><b style="font-size:35px; font-family:Georgia;">
+          Andriana's Pizza</b></a>
+
+      <div class="right-area">
+        <h6><a class="plr-20 color-white btn-fill-primary" href="#s_menu">ORDER: +62 813 8629 9881</a></h6>
+      </div>
+
+      <a class="menu-nav-icon" data-menu="#main-menu" herf="#"><i class="ion-navicon"></i></a>
+
+      <ul class="main-menu font-mountainsre" id="main-menu">
+        <li><a href="#s_about">ABOUT</a></li>
+        <li><a href="#s_services">SERVICES</a></li>
+        <li><a href="#s_contact">CONTACT</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </header>
+  {{template "body" .}}
+  <footer class="pb-50 pt-70 pos-relative" id="s_contact">
+    <div class="pos-top triangle-bottom"></div>
+    <div class="container-fluid">
+      <a href="#"><img src="static/images/heading_logo.png" alt="Logo"></a>
+
+      <div class="pt-30">
+        <p class="underline-secondary"><b>Address: </b></p>
+        <p>Jl. Studio Alam TVRI, Sukmajaya, Depok Jawa Barat 16412</p>
+      </div>
+
+      <div class="pt-30">
+        <p class="underline-secondary"><b>Phone: </b></p>
+        <a href="tel:+62 811 912 7832" target="_blank">+62 813 8629 9881</a>
+      </div>
+
+      <div class="pt-30">
+        <p class="underline-secondary"><b>Email: </b></p>
+        <a href="mailto:andriana.mia1@gmail.com" target="_blank">andriana.mia1@gmail.com</a>
+      </div>
+
+      <ul class="icon pt-30">
+        <li><a href="https://github.com/andika-andriana" target="_blank"><i class="ion-social-github"></i></a></li>
+        <li><a href="https://web.facebook.com/andika.andriana" target="_blank"><i class="ion-social-facebook"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/andika-andriana" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+      </ul>
+
+      <p class="color-light font-9 mt-50 mt-sm-30">
+        Copyright &copy; Andika Andriana <script>
+          document.write(new Date().getFullYear());
+        </script> All Right reserved
+    </div>
+  </footer>
+  <script type="text/javascript" src="static/plugin-frameworks/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="static/plugin-frameworks/bootstrap.min.js"></script>
+  <script type="text/javascript" src="static/plugin-frameworks/swiper.js"></script>
+  <script type="text/javascript" src="static/common/scripts.js"></script>
+</body>
+
+</html>
+{{end}}

@@ -1,0 +1,25 @@
+{{define "title"}}
+Niomic Blog | {{index . "name"}}
+{{end}}
+
+{{define "body"}}
+<section class="story-area left-text center-sm-text">
+  <div class="container">
+    <div class="heading">
+      <img src="static/images/{{.gambar}}" alt="" style="margin-top:100px;height:200px;width:200px;">
+      <h2>{{.nama}}</h2>
+      <h5 class="mt-10 mb-30">Silahkan Order Dengan Mengisi Data Dibawah Ini</h5>
+    </div>
+    <form class="form-style-1 placeholder-1" action="/tambah_order" method="POST">
+      <div class="row">
+        <input name="id" class="mb-20" type="hidden" value="{{.id}}">
+        <div class="col-md-6"><input name="nama_pemesan" class="mb-20" type="text" placeholder="Nama Pemesan"></div>
+        <div class="col-md-6"><input name="nomor_telephone" class="mb-20" type="text" placeholder="Nomor Telephone"></div>
+        <div class="col-md-12"><input name="jumlah" class="mb-20" type="number" placeholder="Jumlah Pesanan"></div>
+        <div class="col-md-12"><textarea name="alamat" class="h-200x ptb-20" placeholder="Alamat"></textarea></div>
+      </div>
+      <h6 class="center-text mtb-30"><button type="submit" class="btn-primaryc plr-25">Pesan Sekarang</button></h6>
+    </form>
+  </div>
+</section>
+{{end}}
